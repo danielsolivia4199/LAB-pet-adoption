@@ -251,9 +251,8 @@ const pets = [
     <div class="card-body">
     <h5 class="card-title">${pet.name}</h5>
     <p>Type: ${pet.type}</p>
-    <p class="card-text">${pet.specialSkill}</p>
-      <p>Type: ${pet.type}</p>
-      <p>Type: ${pet.color}</p>
+    <p>Color: ${pet.color}</p>
+    <p class="card-text">Skill: ${pet.specialSkill}</p>
     </div>
   </div>`;
   }
