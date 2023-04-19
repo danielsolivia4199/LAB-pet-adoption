@@ -241,21 +241,73 @@ const pets = [
     }
   ];
 
-  const targetingApp = document.querySelector("#app");
-  console.log(targetingApp)
+//  const targetingApp = document.querySelector("#app");
+//   console.log(targetingApp)
 
+//   let domString = "";
+//   for (const pet of pets) {
+//     domString += `<div class="card" style="width: 18rem;">
+//     <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
+//     <div class="card-body">
+//     <h5 class="card-title">${pet.name}</h5>
+//     <p>Type: ${pet.type}</p>
+//     <p>Color: ${pet.color}</p>
+//     <p class="card-text">Skill: ${pet.specialSkill}</p>
+//     </div>
+//   </div>`;
+//   }
+
+//   console.log(domString);
+//   targetingApp.innerHTML = domString;
+
+const renderToDom = (divId, htmlToRender) => {
+  const selectedDiv = document.querySelector(divId);
+  selectedDiv.innerHTML = htmlToRender;
+};
+const cardsOnDom = (array) => {
   let domString = "";
-  for (const pet of pets) {
-    domString += `<div class="card" style="width: 18rem;">
+  for (const pet of array) {
+    domString += 
+    `<div class="card" style="width: 18rem;">
     <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
     <div class="card-body">
-    <h5 class="card-title">${pet.name}</h5>
-    <p>Type: ${pet.type}</p>
-    <p>Color: ${pet.color}</p>
-    <p class="card-text">Skill: ${pet.specialSkill}</p>
-    </div>
-  </div>`;
+      <h5 class="card-title">${pet.name}</h5>
+      <p>Type: ${pet.type}</p>
+      <p>Color: ${pet.color}</p>
+      <p>Skill: ${pet.specialSkill}</p>
+        </div>
+       </div>`; }
+    renderToDom("#app", domString);
   }
+  cardsOnDom(pets);
+  const filter = (array, typeString) => {
+    const typeArray = [];
+  
+  for (const pet of array) {
+    if (pet.type === typeString) {
+      typeArray.push(pet);
+    }
+  }
+  return typeArray;
+  }
+ const showAllButton = document.querySelector("#all-btn");
+ const showDogsButton = document.querySelector("#dog-btn")
+ const showCatsButton = document.querySelector("#cat-btn")
+ const showDinosButton = document.querySelector("#dino-btn")
 
-  console.log(domString);
-  targetingApp.innerHTML = domString;
+ showAllButton.addEventListener('click', () => {
+  cardsOnDom(pets)
+ });
+ showCatsButton.addEventListener('click', () => {
+  const catType = filter(pets, 'cat');
+  cardsOnDom(catType);
+ });
+ showDogsButton.addEventListener('click', () => {
+  const dogType = filter(pets, 'dog');
+  cardsOnDom(dogType);
+ });
+ showDinosButton.addEventListener('click', () => {
+  const dinoType = filter(pets, 'dino');
+  cardsOnDom(dinoType);
+ });
+    
