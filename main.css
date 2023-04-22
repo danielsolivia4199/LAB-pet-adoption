@@ -16,7 +16,45 @@ body {
   border: 4px solid lightcyan;
   color: blanchedalmond;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 5px;
+  max-width: 295px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  border: 6px solid lightpink;
+  background-color: lightsteelblue;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.btn-primary {
+  color: orange;
+  background-color: palevioletred;
+  border-color: orange;
+}
+
+.btn-primary:hover {
+  color: orange;
+  background-color: lightcoral;
+  border-color: lightcoral
+}
+
+.form-cont{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
