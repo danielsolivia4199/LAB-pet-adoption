@@ -8,7 +8,7 @@ const pets = [
       imageUrl: "http://kittentoob.com/wp-content/uploads/2015/06/funny-cat-with-a-towel.jpg",
     },
     {
-        id: 2,
+      id: 2,
       name: "Trouble",
       color: "Brown",
       specialSkill: "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
@@ -168,7 +168,7 @@ const pets = [
       imageUrl: "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/2/12/enhanced/webdr15/anigif_enhanced-29802-1446485228-10.gif?crop=250:165;0,0&downsize=715"
     },
     {
-        id: 22,
+      id: 22,
       name: "Snuggles",
       color: "Orange",
       specialSkill: "Is comfortable with jokes about his receding hairline.",
@@ -176,7 +176,7 @@ const pets = [
       imageUrl: "http://funnyanimalphoto.com/wp-content/uploads/2013/08/cat_caught_mouse_thegatewaypundit.jpg"
     },
     {
-        id: 23,
+      id: 23,
       name: "Buddy",
       color: "Red",
       specialSkill: "Enjoys fine wine.",
@@ -184,7 +184,7 @@ const pets = [
       imageUrl: "http://1.bp.blogspot.com/-VjM0CmtN-vU/T7YX-LXa09I/AAAAAAAADA0/Vt1oGWEG0lw/s1600/sheepdog+border+collie+shakes+off+water+funny+picture+photo+pulling+faces+raspberry+tongue.jpg"
     },
     {
-        id: 24,
+      id: 24,
       name: "George",
       color: "Brown",
       specialSkill: "Participates in karaoke but does not force others to go out to karaoke.",
@@ -200,7 +200,7 @@ const pets = [
       imageUrl: "http://funbk.s3.amazonaws.com/wp-content/uploads/2016/06/funny-cat-video-which-will-make-you-laugh-louder.jpg"
     },
     {
-        id: 26,
+      id: 26,
       name: "Bubba",
       color: "Yellow",
       specialSkill: "Cleans himself.",
@@ -208,7 +208,7 @@ const pets = [
       imageUrl: "https://www.thetrendywhippet.co.uk/wp-content/uploads/2016/11/IMG_1651-600x400.jpg"
     },
     {
-        id: 27,
+      id: 27,
       name: "Chloe",
       color: "Green",
       specialSkill: "Admits he is wrong",
@@ -216,7 +216,7 @@ const pets = [
       imageUrl: "https://assets.creationmuseum.org/img/pages/1703-DinoDen-TwoCard.jpg"
     },
     {
-        id: 28,
+      id: 28,
       name: "Nala",
       color: "Purple",
       specialSkill: "Dances when he has to.",
@@ -224,7 +224,7 @@ const pets = [
       imageUrl: "https://tailandfur.com/wp-content/uploads/2016/03/40-Scary-and-Funny-Cat-Pictures-8.jpg"
     },
     {
-        id: 29,
+      id: 29,
       name: "Oscar",
       color: "Green",
       specialSkill: "Gives hugs with appropriate pressure and for the right length of time.",
@@ -232,7 +232,7 @@ const pets = [
       imageUrl: "http://img.izismile.com/img/img2/20090219/cats_02.jpg"
     },
     {
-        id: 30,
+      id: 30,
       name: "Lucy",
       color: "Red",
       specialSkill: "Doesn’t get weirded out by the word “moist.”",
@@ -278,24 +278,24 @@ const cardsOnDom = (array) => {
         </div>
        </div>`; }
     renderToDom("#app", domString);
-  }
-  cardsOnDom(pets);
+}
+cardsOnDom(pets);
   const filter = (array, typeString) => {
     const typeArray = [];
-  
   for (const pet of array) {
     if (pet.type === typeString) {
       typeArray.push(pet);
     }
   }
   return typeArray;
-  }
- const showAllButton = document.querySelector("#all-btn");
- const showDogsButton = document.querySelector("#dog-btn")
- const showCatsButton = document.querySelector("#cat-btn")
- const showDinosButton = document.querySelector("#dino-btn")
+}
 
- showAllButton.addEventListener('click', () => {
+const showAllButton = document.querySelector("#all-btn");
+const showDogsButton = document.querySelector("#dog-btn")
+const showCatsButton = document.querySelector("#cat-btn")
+const showDinosButton = document.querySelector("#dino-btn")
+
+showAllButton.addEventListener('click', () => {
   cardsOnDom(pets)
  });
  showCatsButton.addEventListener('click', () => {
@@ -310,4 +310,33 @@ const cardsOnDom = (array) => {
   const dinoType = filter(pets, 'dino');
   cardsOnDom(dinoType);
  });
+//reference to order of objects
+ //id: 11,
+ //name: "Coco",
+ //color: "Orange",
+ //specialSkill: "Can be around food without staring creepily at it.",
+ //type: "dino",
+ //imageUrl: "http://www.cantref.com/userfiles/events/walking%20dino.jpg?w=600"
+
+//selecting and targeting the from on the DOM
+const form = document.querySelector('form');
+//creating the function that grabs all the values from the form and pushes the info
+const createPet = (e) => {
+  e.preventDefault();
+
+  const newPetObj = {
+    id: pets.length + 1,
+    name: document.querySelector('#name').value,
+    color: document.querySelector('#color').value,
+    specialSkill: document.querySelector('#skill').value,
+    type: document.querySelector('#type').value,
+    imageUrl: document.querySelector('#image').value,
+  }
+
+  pets.push(newPetObj);
+  cardsOnDom(pets);
+  form.reset();
+}
+//adding an event listener for the form submit and passing it the function
+form.addEventListener('submit', createPet);
     
