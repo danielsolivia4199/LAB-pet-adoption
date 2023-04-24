@@ -275,8 +275,9 @@ const cardsOnDom = (array) => {
       <p>Type: ${pet.type}</p>
       <p>Color: ${pet.color}</p>
       <p>Skill: ${pet.specialSkill}</p>
-        </div>
-       </div>`; }
+      <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
+    </div>
+    </div>`; }
     renderToDom("#app", domString);
 }
 cardsOnDom(pets);
@@ -340,3 +341,20 @@ const createPet = (e) => {
 //adding an event listener for the form submit and passing it the function
 form.addEventListener('submit', createPet);
     
+//target app div
+const app = document.querySelector('#app');
+//add event listener to capture clicks
+app.addEventListener('click', (e) => {
+  if (e.target.id.includes("delete")) {
+    const [, id] = e.target.id.split("--");
+    const index = team.findIndex(e => e.id === Number(id));
+    team.splice(index, 1);
+    cardsOnDom(team);
+  }
+});
+
+const startApp = () => {
+  cardsOnDom(team);
+}
+
+startApp();
