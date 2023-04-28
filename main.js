@@ -13,7 +13,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
       type: "dino",
-      imageUrl: "http://www.jozilife.co.za/wp-content/uploads/The-Dino-Expo.jpg",
+      imageUrl: "https://bbts1.azureedge.net/images/p/full/2020/04/b2cf4920-c932-4ab7-ba4f-24265e8cda06.jpg",
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Comfortable in the outdoors for up to eight hours.",
       type: "cat",
-      imageUrl: "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg"
+      imageUrl: "https://c8.alamy.com/comp/T3A6BR/a-scared-brown-tabby-cat-is-looking-of-a-round-window-in-a-cat-condo-and-hissing-T3A6BR.jpg"
     },
     {
       id: 6,
@@ -61,7 +61,7 @@ const pets = [
       color: "Grey",
       specialSkill: "Comfortable in the outdoors for up to eight hours.",
       type: "dino",
-      imageUrl: "http://www.theouthousers.com/images/jck//ThanosCopter/news/grumpasaur.jpg"
+      imageUrl: "https://i0.wp.com/onlydinosaurs.com/wp-content/uploads/2020/07/Realistic-Animatronic-Dinosaur-Costume-of-Raptor2-1.jpg"
     },
     {
       id: 9,
@@ -85,7 +85,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Can be around food without staring creepily at it.",
       type: "dino",
-      imageUrl: "http://www.cantref.com/userfiles/events/walking%20dino.jpg?w=600"
+      imageUrl: "https://i0.wp.com/onlydinosaurs.com/wp-content/uploads/2020/06/Baby-T-Rex-Puppet-with-Orange-Stripe1.jpg"
     },
     {
       id: 12,
@@ -101,7 +101,7 @@ const pets = [
       color: "Red",
       specialSkill: "Expertly quotes and recognizes dialogue from early seasons of The Simpsons.",
       type: "dog",
-      imageUrl: "http://1kjkdg1axrkd2g03cnboj761.wpengine.netdna-cdn.com/wp-content/uploads/2017/12/braydon-anderson-105552-e1512684107659.jpg"
+      imageUrl: "https://townsquare.media/site/812/files/2019/05/valee-dog.jpg?w=980&q=75"
     },
     {
       id: 14,
@@ -125,7 +125,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Drives at a safe rate of speed in snow or rain.",
       type: "dino",
-      imageUrl: "https://images.readwrite.com/wp-content/uploads/2018/03/t-rex-dino-quiz-e1490854556549.jpg"
+      imageUrl: "https://images.fineartamerica.com/images/artworkimages/medium/3/t-rex-dinosaur-head-with-teeth-scary-closeup-of-a-dino-fine-art-nfts.jpg"
     },
     {
      id: 17,
@@ -133,7 +133,7 @@ const pets = [
       color: "Yellow",
       specialSkill: "Does not freak out if you haven’t seen his favorite movie (The Big Lebowski).",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Close_Up_Yawn.jpg"
+      imageUrl: "https://a-z-animals.com/media/2021/11/oriental-kitten-1024x535.jpg"
     },
     {
       id: 18,
@@ -141,7 +141,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Proficient in air guitar",
       type: "dino",
-      imageUrl: "https://www.nation.co.ke/image/view/-/4078922/highRes/1742693/-/maxw/600/-/1453yvh/-/DINO.jpg"
+      imageUrl: "https://discovery.sndimg.com/content/dam/images/discovery/editorial/podcasts/Curiosity/2020/3/GettyImages-168839856.jpg.rend.hgtvcom.406.290.suffix/1583454574828.jpeg"
     },
     {
       id: 19,
@@ -149,7 +149,7 @@ const pets = [
       color: "Blue",
       specialSkill: "Listens attentively to boring stories.",
       type: "dog",
-      imageUrl: "http://dailynewsdig.com/wp-content/uploads/2014/03/Creative-And-Funny-Dog-Stock-Photography-Pictures-2.jpg"
+      imageUrl: "https://www.thesprucepets.com/thmb/TuSW-I2TbJKsnqECPOX2GUIl4zk=/2121x0/filters:no_upscale():strip_icc()/portrait-cute-gray-great-dane-puppy-with-blue-eyes-1252375901-b1d90e97e9b345b49da0a7c84c03ed9d.jpg"
     },
     {
       id: 20,
@@ -157,7 +157,7 @@ const pets = [
       color: "Black",
       specialSkill: "Uses litter box at appropriate hours.",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Lazy_White_Cat.jpg"
+      imageUrl: "https://www.shutterstock.com/image-photo/black-cat-that-scared-something-260nw-1446367247.jpg"
     },
     {
       id: 21,
@@ -165,7 +165,7 @@ const pets = [
       color: "Red",
       specialSkill: "Owns a Nintendo Power Glove.",
       type: "dino",
-      imageUrl: "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/2/12/enhanced/webdr15/anigif_enhanced-29802-1446485228-10.gif?crop=250:165;0,0&downsize=715"
+      imageUrl: "https://cdn.shopify.com/s/files/1/2381/2037/products/mcsdino-creature-suits-walkaround-t-rex-costume-red-dinosaur-dctr606-17177461162118.jpg?v=1622267660"
     },
     {
       id: 22,
@@ -173,7 +173,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Is comfortable with jokes about his receding hairline.",
       type: "cat",
-      imageUrl: "http://funnyanimalphoto.com/wp-content/uploads/2013/08/cat_caught_mouse_thegatewaypundit.jpg"
+      imageUrl: "https://images.squarespace-cdn.com/content/v1/5452d441e4b0c188b51fef1a/1615326541809-TW01PVTOJ4PXQUXVRLHI/male-orange-tabby-cat.jpg"
     },
     {
       id: 23,
@@ -189,7 +189,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Participates in karaoke but does not force others to go out to karaoke.",
       type: "dog",
-      imageUrl: "http://www.dogbreedplus.com/dog_breeds/images/basset-hound-4.jpg"
+      imageUrl: "https://pbs.twimg.com/profile_images/2522806676/dumbbrowndog_400x400.jpg"
     },
     {
       id: 25,
@@ -197,7 +197,7 @@ const pets = [
       color: "Red",
       specialSkill: "Knows the words to 4 rap songs.",
       type: "cat",
-      imageUrl: "http://funbk.s3.amazonaws.com/wp-content/uploads/2016/06/funny-cat-video-which-will-make-you-laugh-louder.jpg"
+      imageUrl: "https://www.purina.com.au/-/media/Project/Purina/Main/Breeds/Cat/Mobile/Cat_Somali-Cat_Mobile.jpg?h=300&la=en&w=375&hash=6ED5877E8559617905A9848C6C6A1FD0"
     },
     {
       id: 26,
@@ -237,10 +237,9 @@ const pets = [
       color: "Red",
       specialSkill: "Doesn’t get weirded out by the word “moist.”",
       type: "dino",
-      imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
+      imageUrl: "https://kpcnotebook.scholastic.com/sites/default/files/dinosaur.jpg"
     }
   ];
-
 //  const targetingApp = document.querySelector("#app");
 //   console.log(targetingApp)
 
@@ -279,6 +278,7 @@ const cardsOnDom = (array) => {
     </div>
     </div>`; }
     renderToDom("#app", domString);
+  
 }
 cardsOnDom(pets);
   const filter = (array, typeString) => {
@@ -340,21 +340,22 @@ const createPet = (e) => {
 }
 //adding an event listener for the form submit and passing it the function
 form.addEventListener('submit', createPet);
-    
+
+//delete button
 //target app div
-const app = document.querySelector('#app');
+const app = document.querySelector("#app");
 //add event listener to capture clicks
 app.addEventListener('click', (e) => {
   if (e.target.id.includes("delete")) {
     const [, id] = e.target.id.split("--");
-    const index = team.findIndex(e => e.id === Number(id));
-    team.splice(index, 1);
-    cardsOnDom(team);
+    const index = pets.findIndex(e => e.id === Number(id));
+    pets.splice(index, 1);
+    cardsOnDom(pets);
   }
 });
 
 const startApp = () => {
-  cardsOnDom(team);
+  cardsOnDom(pets);
 }
 
 startApp();
