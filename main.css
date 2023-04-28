@@ -1,5 +1,45 @@
 body {
-  background-color: azure;
+  background-color: #E8FCC2;
+}
+
+@font-face {
+  src: url(fonts/VT323-Regular.ttf);
+  font-family: pixel;
+}
+
+.webtitle{
+  font-size: 100px;
+  font-style: oblique;
+  font-family: pixel;
+  text-align: center;
+  margin-top: 30px;
+  -webkit-text-fill-color: #344966;
+  text-transform: uppercase;
+  text-decoration-line: unset;
+  
+}
+.gifs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+#catgif{
+  margin-right: 25px;
+}
+
+.modalbutton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: pixel;
+}
+.modal-content{
+  font-family: pixel;
+  background-color: #B1CC74;
+  
 }
 
 #app {
@@ -8,30 +48,14 @@ body {
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
-  font-family:'Courier New', Courier, monospace;
+  font-family: pixel;
   
 }
 .card {
-  background-color: rgb(143, 187, 143);
-  border: 4px solid lightcyan;
-  color: blanchedalmond;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 5px;
-  max-width: 295px;
-  margin-top: 50px;
-  margin-bottom: 25px;
-  border: 6px solid lightpink;
-  background-color: lightsteelblue;
-  padding: 5px;
-  border-radius: 8px;
+  border: 8px solid #FFD6E0;
 }
 
 .buttons {
@@ -39,22 +63,54 @@ form {
   flex-wrap:wrap;
   justify-content: center;
   gap: 50px;
+  font-family: pixel;
 }
 
 .btn-primary {
-  color: orange;
-  background-color: palevioletred;
-  border-color: orange;
+  color: whitesmoke;
+  background-color: #ADA7C9;
+  border-color: #D7B9D5;
 }
 
 .btn-primary:hover {
-  color: orange;
-  background-color: lightcoral;
-  border-color: lightcoral
+  color: whitesmoke;
+  background-color: #D7B9D5;
+  border-color: #ADA7C9;
+}
+.btn-secondary {
+  color: #0D1821;
+  background-color:#E6AACE;
+  border: #E6AACE;
+}
+.btn-secondary:hover {
+  color: #E6AACE;
+  background-color: #344966;
+  border: #344966;
+}
+.btn-info{
+  color: whitesmoke;
+  background-color: #90A8C3;
+  border: #90A8C3;
+}
+.btn-modal{
+  color: #0D1821;
+  background-color:#E6AACE;
+  border: #E6AACE;;
+}
+.btn-modal:hover{
+  color: #E6AACE;
+  background-color: #344966;
+  border: #344966;
+}
+.btn-success {
+  color: #0D1821;
+  background-color:#E6AACE;
+  border: #E6AACE;
+}
+.btn-success:hover{
+  color: #E6AACE;
+  background-color: #344966;
+  border: #344966;
 }
 
-.form-cont{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
